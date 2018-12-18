@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_krs"
+            android:icon="@drawable/ic_action_akademik"
+            android:title="Kartu Rencana Studi (KRS)" />
+        <item
+            android:id="@+id/nav_khs"
+            android:icon="@drawable/ic_action_akademik"
+            android:title="Kartu Hasil Studi (KHS)" />
+        <item
+            android:id="@+id/nav_frs"
+            android:icon="@drawable/ic_action_akademik"
+            android:title="Form Rencana Studi (FRS)" />
+        <item
+            android:id="@+id/nav_jk"
+            android:icon="@drawable/ic_action_akademik"
+            android:title="Jadwal Kuliah" />
+        <item
+            android:id="@+id/nav_rekapkelas"
+            android:icon="@drawable/ic_action_rekapmk"
+            android:title="Rekap Peserta Kelas Tiap MK" />
+        <item
+            android:id="@+id/nav_spp"
+            android:icon="@drawable/ic_action_spp"
+            android:title="SPP" />
+    </group>
+
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share APPs" />
+            <item
+                android:id="@+id/nav_instagram"
+                android:icon="@drawable/instagram"
+                android:title="On Instagram" />
+            <item
+                android:id="@+id/nav_fb"
+                android:icon="@drawable/facebook"
+                android:title="On Facebook" />
+            <item
+                android:id="@+id/nav_twitter"
+                android:icon="@drawable/twitter"
+                android:title="On Twitter" />
+            <item
+                android:id="@+id/nav_tv"
+                android:icon="@drawable/youtube"
+                android:title="UBL Tv" />
+
+        </menu>
+    </item>
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/nav_gantipsw"
+                android:icon="@drawable/ic_action_change"
+                android:title="Ganti Password" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_action_logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+
+
+
+
+</menu>

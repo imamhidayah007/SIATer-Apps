@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MenuUtama"
+    tools:showIn="@layout/app_bar_menu_utama">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/carouselView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:fillColor="#0c85ba"
+        app:pageColor="#00000000"
+        app:radius="6dp"
+        app:slideInterval="3000"
+        app:strokeColor="#FF777777"
+        app:strokeWidth="1dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ly1"
+        android:layout_weight="1"
+        android:layout_below="@id/carouselView"
+        android:orientation="vertical">
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#E5E5E5"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:paddingEnd="60dp"
+                android:paddingLeft="60dp"
+                android:paddingRight="60dp"
+                android:paddingStart="60dp"
+                android:paddingTop="10dp" />
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ly1"
+        android:paddingTop="13dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_kontak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KONTAK KAMI"
+            android:textColor="@color/warnaitem"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="13dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/g_map"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/map"/>
+
+            <TextView
+                android:id="@+id/alamat1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/warnaitem"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="Kampus A : Jl. Zainal Abidin Pagar Alam No. 26, Labuhan Ratu Bandar Lampung 35142.\nLampung Indonesia"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/g_map2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/map"/>
+
+            <TextView
+                android:id="@+id/alamat2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/warnaitem"
+                android:textStyle="bold"
+                android:text="Kampus B : Jl. Zainal Abidin Pagar Alam No. 89, Labuhan Ratu Bandar Lampung 35142.\nLampung Indonesia"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:paddingTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/g_mail"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/mail"/>
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/warnaitem"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:text="info@ubl.ac.id \nwww.ubl.ac.id"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:paddingTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/g_telp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/iphone"/>
+
+            <TextView
+                android:id="@+id/telepon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/warnaitem"
+                android:layout_marginLeft="10dp"
+                android:text="0721-773847, 0721-701979 (kampus A); 0721-789825 (kampus B)"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
+    </ScrollView>
+
+
+

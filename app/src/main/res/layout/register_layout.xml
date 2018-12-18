@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/gambarSiater"
+        android:spinnerMode="dialog"
+        android:layout_width="210dp"
+        android:layout_height="105dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/siaterh" />
+
+    <TextView
+        android:id="@+id/r_sp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sp_tahun"
+        android:layout_alignStart="@+id/sp_tahun"
+        android:layout_below="@+id/gambarSiater"
+        android:layout_marginTop="5dp"
+        android:text="Tahun Aktif"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+    <Spinner
+        android:id="@+id/sp_tahun"
+        android:prompt="@string/spinner_tahun"
+        android:layout_width="250dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/r_sp1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_spinner"
+        android:ems="10"/>
+
+    <TextView
+        android:id="@+id/r_sp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sp_prodi"
+        android:layout_alignStart="@+id/sp_prodi"
+        android:layout_below="@+id/sp_tahun"
+        android:layout_marginTop="5dp"
+        android:text="Program Studi"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+    <Spinner
+        android:id="@+id/sp_prodi"
+        android:prompt="@string/spinner_judul"
+        android:layout_width="250dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/r_sp2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_spinner"
+        android:ems="10"/>
+
+    <EditText
+        android:id="@+id/r_npm"
+        android:drawableLeft="@drawable/ic_action_person"
+        android:hint="NPM Anda"
+        android:textColor="#ffffff"
+        android:background="#11000000"
+        android:textColorHint="#7e8076"
+        android:layout_width="250dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/sp_prodi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/r_password"
+        android:textColor="#ffffff"
+        android:textColorHint="#7e8076"
+        android:hint="Password"
+        android:drawableLeft="@drawable/ic_action_password2"
+        android:background="#11000000"
+        android:layout_width="250dp"
+        android:layout_height="36dp"
+        android:layout_alignLeft="@+id/r_npm"
+        android:layout_alignStart="@+id/r_npm"
+        android:layout_below="@+id/r_npm"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+
+    <EditText
+        android:id="@+id/r_email"
+        android:textColor="#ffffff"
+        android:textColorHint="#7e8076"
+        android:hint="E-mail"
+        android:drawableLeft="@drawable/ic_action_mail"
+        android:background="#11000000"
+        android:layout_width="250dp"
+        android:layout_height="36dp"
+        android:layout_alignLeft="@+id/r_password"
+        android:layout_alignStart="@+id/r_password"
+        android:layout_below="@+id/r_password"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+
+    <EditText
+        android:id="@+id/r_telp"
+        android:textColor="#ffffff"
+        android:textColorHint="#7e8076"
+        android:hint="Telepon/HP"
+        android:drawableLeft="@drawable/ic_action_telp"
+        android:background="#11000000"
+        android:layout_width="250dp"
+        android:layout_height="36dp"
+        android:layout_alignLeft="@+id/r_email"
+        android:layout_alignStart="@+id/r_email"
+        android:layout_below="@+id/r_email"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/r_textangkatan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/r_angkatan"
+        android:layout_alignStart="@+id/r_angkatan"
+        android:layout_below="@+id/r_telp"
+        android:layout_marginTop="22dp"
+        android:text="Khusus S2"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/r_angkatan"
+        android:drawableLeft="@drawable/ic_action_petir"
+        android:hint="Angkatan (contoh 67)"
+        android:textColorHint="#7e8076"
+        android:textColor="#ffffff"
+        android:background="#11000000"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/r_telp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        />
+
+
+
+
+    <Button
+        android:id="@+id/btn_register"
+        android:background="@drawable/button_rectangle_pink"
+        android:layout_below="@+id/r_angkatan"
+        android:textColor="#ffffff"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Register" />
+
+</RelativeLayout>
+
+</ScrollView>
